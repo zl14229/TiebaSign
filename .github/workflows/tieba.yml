@@ -1,10 +1,9 @@
-# 每天6:30执行
-
-name: Start
+name: AutoSign
 
 on:
    schedule:
-       - cron: '30 18 * * *'
+         # 每天3:00执行
+       - cron: '00 19 * * *'
 
 jobs:
   TiebaSignIn:
