@@ -1,9 +1,9 @@
 name: AutoSign
 
 on:
+   workflow_dispatch:
    schedule:
-         # 每天3:00执行
-       - cron: '00 19 * * *'
+       - cron: '00 19 * * *'    # 每天3:00执行
 
 jobs:
   TiebaSignIn:
